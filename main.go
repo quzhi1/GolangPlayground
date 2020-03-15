@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	displayRot13()
+	showImage()
 }
 
 func showPic() {
@@ -58,4 +58,9 @@ func displayRot13() {
 	s := strings.NewReader("Lbh penpxrq gur pbqr!")
 	r := helper.Rot13Reader{R: s}
 	io.Copy(os.Stdout, &r)
+}
+
+func showImage() {
+	m := &helper.Image{Width: 255, Height: 255}
+	pic.ShowImage(m)
 }
