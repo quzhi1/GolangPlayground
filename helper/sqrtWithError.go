@@ -23,3 +23,9 @@ func SqrtWithError(x float64) (float64, error) {
 	}
 	return z, nil
 }
+
+// CheckSqrtWithError print sqrt(2) and sqrt(-2)
+func CheckSqrtWithError() {
+	fmt.Println(SqrtWithError(2))
+	fmt.Println(SqrtWithError(-2))
+}

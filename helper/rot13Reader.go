@@ -2,6 +2,7 @@ package helper
 
 import (
 	"io"
+	"os"
 	"strings"
 )
 
@@ -21,4 +22,11 @@ func (rr *Rot13Reader) Read(b []byte) (n int, err error) {
 		}
 	}
 	return
+}
+
+// DisplayRot13 display decoded string
+func DisplayRot13() {
+	s := strings.NewReader("Lbh penpxrq gur pbqr!")
+	r := Rot13Reader{R: s}
+	io.Copy(os.Stdout, &r)
 }

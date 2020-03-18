@@ -1,5 +1,7 @@
 package helper
 
+import "golang.org/x/tour/pic"
+
 // Pic Generate a picture
 func Pic(dx, dy int) [][]uint8 {
 	result := make([][]uint8, dy)
@@ -11,4 +13,9 @@ func Pic(dx, dy int) [][]uint8 {
 
 	}
 	return result
+}
+
+// ShowPic prints Pic
+func ShowPic() {
+	pic.Show(Pic)
 }

@@ -1,6 +1,10 @@
 package helper
 
-import "strings"
+import (
+	"strings"
+
+	"golang.org/x/tour/wc"
+)
 
 // WordCount returns a map of word => occurence
 func WordCount(s string) map[string]int {
@@ -10,4 +14,9 @@ func WordCount(s string) map[string]int {
 		result[word]++
 	}
 	return result
+}
+
+// WordCountTest verify WordCount function
+func WordCountTest() {
+	wc.Test(WordCount)
 }
