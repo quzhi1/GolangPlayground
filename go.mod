@@ -1,4 +1,4 @@
-module zhiqu.com/m/v2
+module github.com/quzhi1/GolangPlayground
 
 go 1.17
 
