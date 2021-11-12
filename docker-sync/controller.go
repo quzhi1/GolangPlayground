@@ -11,9 +11,8 @@ func initiateRoutes() *gin.Engine {
 	route.LoadHTMLGlob("templates/**")
 
 	route.GET("/", func(context *gin.Context) {
-		context.HTML(http.StatusAccepted, "index.html", nil)
+		context.HTML(http.StatusOK, "index.html", nil)
 	})
 
 	return route
-
 }
