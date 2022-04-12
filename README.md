@@ -5,3 +5,4 @@ This repository composes the following tutorial walkthrough:
 3. Martini Readme: https://github.com/go-martini/martini
 4. Gin Readme: https://github.com/gin-gonic/gin
 5. Deploying Gin application with Docker: https://dev.to/zeedt/deploying-gin-go-web-framework-application-with-docker-55p0
+6. Go generics: https://go.dev/doc/tutorial/generics

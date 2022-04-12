@@ -17,3 +17,6 @@ bin/
 
 # Uploaded test files
 gin-example/uploaded_files/*
+
+# Mac
+.DS_Store
